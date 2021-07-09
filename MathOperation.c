@@ -44,9 +44,9 @@ int main()
   Large a, b;
   int l1, l2;
   printf("Enter first number: ");
-  scanf("%11s", &a.n); l1 = strlen(a.n);
+  scanf("%101s", &a.n); l1 = strlen(a.n);
   printf("Enter second number: ");
-  scanf("%11s", &b.n); l2 = strlen(b.n);
+  scanf("%101s", &b.n); l2 = strlen(b.n);
   a = conNum(&a, l1);
   b = conNum(&b, l2);
   printf("First no. = %.*s\n", l1, a.n + 100 - l1 + 1);
